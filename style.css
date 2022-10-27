@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+container {
+  margin: 2rem auto;
+  position: relative;
+}
+
+.player {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  height: auto;
+  border-radius: 60px 10px 60px 90px;
+}
+
+.photo {
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.strip {
+  width: 100%;
+  bottom: 3rem;
+  left: 1rem;
+  right: 1rem;
+  margin: 2rem;
+  padding: 1rem;
+  display: flex;
+  height: 120px;
+  overflow-x: auto;
+}
+
+.strip > * > img {
+  object-fit: cover;
+  height: 90%;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+button {
+  padding: 1rem 2rem;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
